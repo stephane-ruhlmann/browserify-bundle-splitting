@@ -9,6 +9,9 @@ function writeBundle(bundle, outputName, callback) {
   outputName = path.join('build', outputName);
   console.log('Start bundling ' + outputName);
   bundle.bundle()
+    .on("error", function(err) {
+      console.log("ERROR", err.stack);
+    })
     .on('end', function() {
       console.log('Done bundling ' + outputName);
       if (callback) {

@@ -15,6 +15,9 @@
     "pathmodify": "^0.3.1"
   },
   "dependencies": {
-    "react": "^0.13.3"
+    "baobab-react": "^1.0.0",
+    "history": "^1.13.1",
+    "react": "^0.13.3",
+    "react-router": "^1.0.2"
   }
 }
